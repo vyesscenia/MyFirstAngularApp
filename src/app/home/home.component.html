@@ -1,0 +1,9 @@
+<div class="home-grid">
+    <button
+      *ngFor="let b of buttons; let i =index;"
+      class="even btn btn-primary"
+      [ngClass]="{ 'odd': b.odd}"
+      (click)="toggle(b)">
+      {{b.text}}
+      </button>
+</div>
